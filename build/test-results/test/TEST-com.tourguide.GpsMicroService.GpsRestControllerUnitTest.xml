@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tourguide.GpsMicroService.GpsRestControllerUnitTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-12-13T16:11:30" hostname="OBS-Desktop" time="0.107">
+  <properties/>
+  <testcase name="testGetUserLocation()" classname="com.tourguide.GpsMicroService.GpsRestControllerUnitTest" time="0.105"/>
+  <testcase name="testGetAttractions()" classname="com.tourguide.GpsMicroService.GpsRestControllerUnitTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

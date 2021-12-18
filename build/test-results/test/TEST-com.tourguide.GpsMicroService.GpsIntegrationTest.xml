@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tourguide.GpsMicroService.GpsIntegrationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-12-13T16:11:30" hostname="OBS-Desktop" time="0.381">
+  <properties/>
+  <testcase name="testGetUserLocation()" classname="com.tourguide.GpsMicroService.GpsIntegrationTest" time="0.358"/>
+  <testcase name="testGetAttractions()" classname="com.tourguide.GpsMicroService.GpsIntegrationTest" time="0.023"/>
+  <system-out><![CDATA[17:11:27.990 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+17:11:28.004 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+17:11:28.051 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.tourguide.GpsMicroService.GpsIntegrationTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+17:11:28.064 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.tourguide.GpsMicroService.GpsIntegrationTest], using SpringBootContextLoader
+17:11:28.070 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.tourguide.GpsMicroService.GpsIntegrationTest]: class path resource [com/tourguide/GpsMicroService/GpsIntegrationTest-context.xml] does not exist
+17:11:28.070 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.tourguide.GpsMicroService.GpsIntegrationTest]: class path resource [com/tourguide/GpsMicroService/GpsIntegrationTestContext.groovy] does not exist
+17:11:28.070 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.tourguide.GpsMicroService.GpsIntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+17:11:28.071 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.tourguide.GpsMicroService.GpsIntegrationTest]: GpsIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:11:28.125 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.tourguide.GpsMicroService.GpsIntegrationTest]
+17:11:28.214 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/orionbs/Documents/OpenClassrooms/Projet8_TripMaster/GpsMicroService/build/classes/java/main/com/tourguide/GpsMicroService/GpsMicroServiceApplication.class]
+17:11:28.215 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.tourguide.GpsMicroService.GpsMicroServiceApplication for test class com.tourguide.GpsMicroService.GpsIntegrationTest
+17:11:28.311 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.tourguide.GpsMicroService.GpsIntegrationTest]: using defaults.
+17:11:28.311 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+17:11:28.322 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/TransactionDefinition]
+17:11:28.323 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+17:11:28.323 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@44c2e8a8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3340ff7c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@42e4431, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5e198c40, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@dcdb883, org.springframework.test.context.support.DirtiesContextTestExecutionListener@39420d59, org.springframework.test.context.event.EventPublishingTestExecutionListener@4fbbd98c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5dd227b7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@3d3b852e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@14ba7f15, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@55cb3b7, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@497fd334, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@280c3dc0]
+17:11:28.327 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@2c1a95a2 testClass = GpsIntegrationTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1adf387e testClass = GpsIntegrationTest, locations = '{}', classes = '{class com.tourguide.GpsMicroService.GpsMicroServiceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@7ead1d80, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@4b3fa0b3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@b5c902, [ImportsContextCustomizer@72b53f27 key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@4536a715, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7e77678c, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@51f01535, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@3bfc6a5e], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+17:11:28.356 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.6)
+
+2021-12-13 17:11:28.604  INFO 13611 --- [    Test worker] c.t.GpsMicroService.GpsIntegrationTest   : Starting GpsIntegrationTest using Java 11.0.11 on OBS-Desktop with PID 13611 (started by orionbs in /home/orionbs/Documents/OpenClassrooms/Projet8_TripMaster/GpsMicroService)
+2021-12-13 17:11:28.606  INFO 13611 --- [    Test worker] c.t.GpsMicroService.GpsIntegrationTest   : No active profile set, falling back to default profiles: default
+2021-12-13 17:11:30.018  INFO 13611 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-12-13 17:11:30.019  INFO 13611 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-12-13 17:11:30.025  INFO 13611 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2021-12-13 17:11:30.039  INFO 13611 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 20 ms
+2021-12-13 17:11:30.064  INFO 13611 --- [    Test worker] c.t.GpsMicroService.GpsIntegrationTest   : Started GpsIntegrationTest in 1.701 seconds (JVM running for 2.865)
+2021-12-13 17:11:30.364  INFO 13611 --- [    Test worker] c.t.G.service.impl.GpsServiceImpl        : Call b3d6fad7-6c38-4e5c-acce-4112400e388b
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /getUserLocation
+       Parameters = {userId=[b3d6fad7-6c38-4e5c-acce-4112400e388b]}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.tourguide.GpsMicroService.restController.GpsRestController
+           Method = com.tourguide.GpsMicroService.restController.GpsRestController#getUserLocation(UUID)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"userId":"b3d6fad7-6c38-4e5c-acce-4112400e388b","location":{"longitude":-48.891724,"latitude":31.572069},"timeVisited":"2021-12-13T16:11:30.404+00:00"}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2021-12-13 17:11:30.467  INFO 13611 --- [    Test worker] c.t.G.service.impl.GpsServiceImpl        : Call
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /getAttractions
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.tourguide.GpsMicroService.restController.GpsRestController
+           Method = com.tourguide.GpsMicroService.restController.GpsRestController#getAttractions()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = [{"longitude":-117.922008,"latitude":33.817595,"attractionName":"Disneyland","city":"Anaheim","state":"CA","attractionId":"3f5a9cbd-88b2-4df9-ae35-ec7bafea8446"},{"longitude":-110.821999,"latitude":43.582767,"attractionName":"Jackson Hole","city":"Jackson Hole","state":"WY","attractionId":"9f02cb8a-5cd8-4405-bf55-697d9ed9c3a0"},{"longitude":-115.510399,"latitude":35.141689,"attractionName":"Mojave National Preserve","city":"Kelso","state":"CA","attractionId":"0ee82d44-2c6f-4f4c-8bab-cf29c42d68ae"},{"longitude":-115.90065,"latitude":33.881866,"attractionName":"Joshua Tree National Park","city":"Joshua Tree National Park","state":"CA","attractionId":"95acbfac-5fb5-483e-accc-1ed0ca8ea2b7"},{"longitude":-92.757652,"latitude":35.985512,"attractionName":"Buffalo National River","city":"St Joe","state":"AR","attractionId":"d4ac0931-7317-4143-b119-a51f4bfa42b9"},{"longitude":-93.042267,"latitude":34.52153,"attractionName":"Hot Springs National Park","city":"Hot Springs","state":"AR","attractionId":"28a1be71-21c5-4256-a654-6d3442b52efe"},{"longitude":-110.347382,"latitude":31.837551,"attractionName":"Kartchner Caverns State Park","city":"Benson","state":"AZ","attractionId":"375bbbf9-0913-4001-a9ee-f9c0eee44e0d"},{"longitude":-82.40667,"latitude":39.937778,"attractionName":"Legend Valley","city":"Thornville","state":"OH","attractionId":"50019816-94db-4669-a7af-4b133fc16773"},{"longitude":-84.07486,"latitude":37.131527,"attractionName":"Flowers Bakery of London","city":"Flowers Bakery of London","state":"KY","attractionId":"236f4a43-a064-4f6e-9353-4cd9732b84d2"},{"longitude":-149.877502,"latitude":61.218887,"attractionName":"McKinley Tower","city":"Anchorage","state":"AK","attractionId":"9a8a41b4-1573-4f08-89d0-63d81288bca6"},{"longitude":-73.989723,"latitude":40.741112,"attractionName":"Flatiron Building","city":"New York City","state":"NY","attractionId":"b2fcdcf7-47e6-4a4f-924a-0061aa395e20"},{"longitude":-79.468056,"latitude":39.906113,"attractionName":"Fallingwater","city":"Mill Run","state":"PA","attractionId":"af01b6ca-6d21-46d9-99fc-4b0372a767e0"},{"longitude":-77.006332,"latitude":38.897095,"attractionName":"Union Station","city":"Washington D.C.","state":"CA","attractionId":"69e5dea7-a1fb-4edb-b537-51e7eca0fb63"},{"longitude":-80.116577,"latitude":26.890959,"attractionName":"Roger Dean Stadium","city":"Jupiter","state":"FL","attractionId":"a919479c-3592-42c6-ba3b-3f14dfcb9dfe"},{"longitude":-97.732536,"latitude":30.283682,"attractionName":"Texas Memorial Stadium","city":"Austin","state":"TX","attractionId":"9e3c96af-ce20-48fe-bd71-72aa45171c29"},{"longitude":-87.550438,"latitude":33.208973,"attractionName":"Bryant-Denny Stadium","city":"Tuscaloosa","state":"AL","attractionId":"bd350715-c787-44b4-9dc3-118a75094cf9"},{"longitude":-91.183815,"latitude":30.412035,"attractionName":"Tiger Stadium","city":"Baton Rouge","state":"LA","attractionId":"69f5a436-23cb-4b9c-a6c5-3789823acb05"},{"longitude":-83.925011,"latitude":35.955013,"attractionName":"Neyland Stadium","city":"Knoxville","state":"TN","attractionId":"fbd7f5e2-61d2-4113-99a3-98de97478306"},{"longitude":-96.339844,"latitude":30.61025,"attractionName":"Kyle Field","city":"College Station","state":"TX","attractionId":"9615fcf7-3f75-4135-bacb-155f30b8ae63"},{"longitude":-117.149048,"latitude":32.735317,"attractionName":"San Diego Zoo","city":"San Diego","state":"CA","attractionId":"c5e325d8-1f70-462a-a0ae-3ba8b8b9c025"},{"longitude":-82.469269,"latitude":28.012804,"attractionName":"Zoo Tampa at Lowry Park","city":"Tampa","state":"FL","attractionId":"1530fb74-b420-4cab-b004-781278dfba82"},{"longitude":-71.086731,"latitude":42.302601,"attractionName":"Franklin Park Zoo","city":"Boston","state":"MA","attractionId":"0f5e9840-a563-4884-9abf-503d3743c056"},{"longitude":-106.44487,"latitude":31.769125,"attractionName":"El Paso Zoo","city":"El Paso","state":"TX","attractionId":"5362a2f5-6698-4617-9898-8d6bc0dbc0ee"},{"longitude":-94.529625,"latitude":39.007504,"attractionName":"Kansas City Zoo","city":"Kansas City","state":"MO","attractionId":"dc32de44-a0d3-4702-836a-5330c24129d5"},{"longitude":-73.872971,"latitude":40.852905,"attractionName":"Bronx Zoo","city":"Bronx","state":"NY","attractionId":"edcc8f4e-278b-43b4-b651-0d7e83808389"},{"longitude":-81.5812,"latitude":28.419411,"attractionName":"Cinderella Castle","city":"Orlando","state":"FL","attractionId":"67d2053a-f4d1-4672-a2ea-f571c3bedfbc"}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

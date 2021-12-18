@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tourguide.GpsMicroService.GpsServiceUnitTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-12-13T16:11:30" hostname="OBS-Desktop" time="0.017">
+  <properties/>
+  <testcase name="testGetUserLocation()" classname="com.tourguide.GpsMicroService.GpsServiceUnitTest" time="0.015"/>
+  <testcase name="testGetAttractions()" classname="com.tourguide.GpsMicroService.GpsServiceUnitTest" time="0.001"/>
+  <system-out><![CDATA[2021-12-13 17:11:30.615  INFO 13611 --- [    Test worker] c.t.G.service.impl.GpsServiceImpl        : Call 2b7f2493-c1ea-44ce-91f9-081dd89927e8
+2021-12-13 17:11:30.617  INFO 13611 --- [    Test worker] c.t.G.service.impl.GpsServiceImpl        : Call
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
