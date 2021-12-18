@@ -19,11 +19,20 @@ public class GpsRestController {
         this.gpsService = gpsService;
     }
 
+    /**
+     * Transmet la dernière localisation de l'utilisateur.
+     * @param userId l'id de l'utilisateur.
+     * @return la dernière VisitedLocation de l'utilisateur.
+     */
     @GetMapping(path = "/getUserLocation")
     public VisitedLocation getUserLocation(@RequestParam UUID userId) {
         return gpsService.getUserLocation(userId);
     }
 
+    /**
+     * Transmet la liste des attractions connues.
+     * @return la liste avec toutes les Attractions dedans.
+     */
     @GetMapping(path = "/getAttractions")
     public List<Attraction> getAttractions() {
         return gpsService.getAttractions();

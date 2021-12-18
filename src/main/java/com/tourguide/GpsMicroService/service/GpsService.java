@@ -8,7 +8,16 @@ import java.util.UUID;
 
 public interface GpsService {
 
+    /**
+     * Récupère la dernière localisation de l'utilisateur.
+     * @param userId l'id de l'utilisateur.
+     * @return la dernière VisitedLocation de l'utilisateur.
+     */
     public VisitedLocation getUserLocation(UUID userId);
 
+    /**
+     * Récupère la liste des attractions connues.
+     * @return la liste avec toutes les Attractions dedans.
+     */
     public List<Attraction> getAttractions();
 }
