@@ -29,8 +29,8 @@ https://github.com/OrionBS/Projet8_TripMaster-TripPricerMicroService
 
 ```
 cd /"dossier de téléchargement"/
-git clone https://github.com/OrionBS/Projet8_TripMaster
-cd /Projet7_Poseidon-Inc
+git clone https://github.com/OrionBS/Projet8_TripMaster-GpsMicroService
+cd /Projet8_TripMaster-GpsMicroService
 ```
 
 ### Installation
